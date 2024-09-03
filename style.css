@@ -1,132 +1,110 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
-    line-height: 1;
+    line-height: 1.6;
 }
-ol, ul,li {
+
+ol, ul, li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--color-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sección Menu*/
-
-section.menu{
-
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
 }
 
-/*Sección Title*/
-
-section.title{
-
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
 }
 
-/*Sección About*/
-
-section.about{
-
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-/*Sección Hobbies*/
-
-section.hobbies{
-    
+.navegacion__lista {
+    display: none;
 }
 
-/* Experiencia Académica*/
-
-section.academic{
-
+.navegacion__elemento a {
+    font-size: 0.9rem;
 }
-
-/* experiencia*/
-
-section.experience{
-
-}
-
-/*Contacto*/
-
-section.formcontato{
-
-}
-
-/*footeer*/
-
-section.footer{
-   
-}
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+/* ------------------------------ Sección Presentación ------------------------------*/
 
 
-/*Tablet*/
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Menú */
+    .cabecera__logo {
+        max-width: 100px;
+    }
 
-/*title*/
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
 
-/*Skills*/
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
 
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
 
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
 }
