@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
@@ -15,31 +15,32 @@
 <body>
     <!-- Menú -->
     <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">JoseZamora
-        <h1 class="cabecera__titulo">Alura Latam</h1>
+        <a href="index.html">
+            <img class="cabecera__logo" src="assets/LogoR.svg" alt="Logo de Jose Zamora">
+        </a>
         <nav class="navegacion">
             <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+                <li class="navegacion__elemento"><a href="#sobre-mi" aria-label="Sección sobre mí">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades" aria-label="Sección mis habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones" aria-label="Sección sobre mis hobbies">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion" aria-label="Sección sobre mí formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos" aria-label="Sección sobre mis proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto" aria-label="Sección sobre como contactarme"><b>jose.zamora@gmail.com</b></a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Sección de Presentación -->
     <section class="presentacion">
-        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
+        <img class="presentacion__foto" src="assets/miFoto.png" alt="Foto de perfil de Jose Zamora">
         <div class="presentacion__contenedor">
-            <h2 class="presentacion__titulo">Hola, mi nombre es Alura Latam y construyo páginas web</h2>
-            <p class="presentacion__subtitulo">Soy formada en... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+            <h2 class="presentacion__titulo">Hola, mi nombre es José Zamora y me desempeño como Analista Funcional</h2>
+            <p class="presentacion__subtitulo">Soy Ingeniero en Sistemas con diplomado en Desarrollo Web y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
             <ul class="redes">
-                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://github.com/zamorajg">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="www.linkedin.com/in/jose-zamora-sistemas">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.instagram.com/zamorajg">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="sintesis.pdf">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
             </ul>
         </div>
     </section>
@@ -47,10 +48,10 @@
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+        <p class="sobre-mi__texto">Soy un profesional, orientado a los detalle que aporten resultados, cuento con una solida formación en el analisis funcional como en el desarrollo técnico, lo que me permite tener conocimientos desde el Backend hasta el frontend. Me experiencia me ha permitido ser flexible y adaptable, lo que me capacita para manejar situaciones bajo presión y colaborar eficazmente en equipos multidisciplinarios</p>
+        <p class="sobre-mi__texto">Me dapto facilmente por lo que me encuentro en una constante capacitacion del manejo de nuevas herramientas en tendencia cn el mercado, por lo cual estoy actualmente formando en el curso de Front End de Alura Latam</p>
         <!-- Firma opcional -->
-        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+        <img class="sobre-mi__firma" src="assets/Firma-removebg-preview.png" alt="Firma">
     </section>
 
     <!-- Sección de Habilidades -->
@@ -58,7 +59,7 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
+                <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
                 <p class="habilidades__nombre">HTML 5</p>
             </li>
             <li class="habilidades__elemento">
@@ -89,12 +90,12 @@
         <h2 class="aficiones__titulo">Aficiones</h2>
         <ul class="aficiones__lista">
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
-                <p class="aficiones__nombre">Patinaje</p>
+                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Entrenar">
+                <p class="aficiones__nombre">Entrenar Gym</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                <p class="aficiones__nombre">Tocar bajo</p>
+                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Ir a la playa">
+                <p class="aficiones__nombre">Ir a la playa</p>
             </li>
             <li class="aficiones__elemento">
                 <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
@@ -120,24 +121,24 @@
         <h2 class="formacion__titulo">Formación académica</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                <img class="formacion__icono" src="assets/logounexpo.png" alt="UFPR">
                 <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+                    <h3 class="formacion__nombre">Ingeniero en Sistemas</h3>
+                    <p class="formacion__detalle">1993 - 1998</p>
                 </div>
             </li>
             <li class="formacion__elemento">
                 <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
                 <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
+                    <h3 class="formacion__nombre">Formación en Front End</h3>
                     <p class="formacion__detalle">2024 - Alura</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
+                <img class="formacion__icono" src="assets/ucv.png" alt="UFRJ">
                 <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
+                    <h3 class="formacion__nombre">Diplomado en Desarrollo Web</h3>
+                    <p class="formacion__detalle">2019 - UCV</p>
                 </div>
             </li>
         </ul>
@@ -147,12 +148,28 @@
     <section class="proyectos" id="proyectos">
         <h2 class="proyectos__titulo">Experiencia Profesional</h2>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Analista Funcional Semisenior</h3>
+            <p class="proyectos__descripcion">Émerix (Hibrido) Proyecto: Abril 2023 - Agosto 2023</p>
+            <ul>
+                <li>Participe en la implementación y configuración del proyecto de cobranzas para el Banco Itau Chile</li>
+                <li>Realice reportes diarios (Daily) mediante la metodología Ágil (Scrum) en JIRA para gestionar tareas e incidencias de la Mesa de Ayuda y documentarlas en Confluence y Sharepoint.</li>
+                <li>Diseñe, Diagrame y documente cada una de las soluciones técnicas, optimizando los procedimientos y consultas en PL/SQL en Oracles y T-SQL (SQL Server).</li>
+                <li>Detecte y asesore al equipo de desarrollo sobre desvíos u omisiones en las funcionalidades solicitadas por el cliente</li>
+            </ul>
+            
+        
         </div>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Ingeniero de Software </h3>
+            <p class="proyectos__descripcion">Genesys-DP World (Remoto) Enero 2022 - Septiembre 2022</p>
+            <ul>
+                <li>Optimicé el análisis del levantamiento de requerimientos (UML) en un 60%, mediante el diseño y documentación de los casos de usos, especificaciones funcionales y diagramas para el Sistema de Cálculo de Remuneraciones de DP World.</li>
+                <li Aplique análisis funcional mediante Ingeniería inversa de los procesos de Negocios desarrollados en PL/SQL y Visual Basic.</li>
+                <li>Adecue la intranet al incorporar un centro de costo al módulo de estados de resultados de la gerencia con interface a ASP, SAP-BO, Oracle y SQL Server</li>
+               
+            </ul>
+            
+        
         </div>
     </section>
 
@@ -166,6 +183,10 @@
             <button class="contacto__boton" type="submit">Enviar</button>
         </form>
     </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>José Zamora® 2024</p>
+    </footer>
 </body>
     <script src="script.js"></script>
 </html>
